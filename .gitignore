@@ -143,5 +143,7 @@ $RECYCLE.BIN/
 .nfs
  
  
- #vscode
+# vscode
+ 
+ .vscode/
  .vscode
