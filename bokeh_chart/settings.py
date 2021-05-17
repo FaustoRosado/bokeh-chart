@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bokeh-chart',
+    'bokeh_chart',
 ]
 
 MIDDLEWARE = [
