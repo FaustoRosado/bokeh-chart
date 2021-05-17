@@ -141,3 +141,7 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs
+ 
+ 
+ #vscode
+ .vscode

@@ -1,11 +1,12 @@
+from bokeh_chart.settings import DATABASES
 from django.shortcuts import render
-from bokeh.embed import components
-from .app import get_symbol, plot_stock
+from .app import get_ticker, plot_stock
 
-def index(request):
+def base(request):
     
-    
-
     script, div = components(p_stock)
+    
+
+    
 
     return render('base.html', {'script':script, 'div':div})
