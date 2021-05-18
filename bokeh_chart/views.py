@@ -9,4 +9,4 @@ def base(request):
 
     
 
-    return render('base.html', {'script':script, 'div':div})
+    return render(request, '/', {'script':script, 'div':div})

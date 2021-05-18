@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,11 +11,14 @@
     <script src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.3.2.min.js" integrity="sha384-TX0gSQTdXTTeScqxj6PVQxTiRW8DOoGVwinyi1D3kxv7wuxQ02XkOxv0xwiypcAH" crossorigin="anonymous"></script>
 
     <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.3.2.min.js" integrity="sha384-bEsM86IHGDTLCS0Zod8a8WM6Y4+lafAL/eSiyQcuPzinmWNgNO2/olUF0Z2Dkn5i" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href={% static 'css/base.css' %}>
 </head>
 <body>
     {{ div | safe }}
 
     {{ script | safe }}
+
+    {% block content %}
+    {% endblock content %}
 </body>
 </html>
