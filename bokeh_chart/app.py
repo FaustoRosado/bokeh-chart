@@ -40,22 +40,22 @@ def plot_stock(stock):
     return p
 
 
-stock = ColumnDataSource(
-    data=dict(Date=[], Open=[], Close=[], High=[], Low=[],index=[]))
+# stock = ColumnDataSource(
+#     data=dict(Date=[], Open=[], Close=[], High=[], Low=[],index=[]))
 
-ticker = "DOGE-USD"
+# ticker = "DOGE-USD"
 
-df = get_ticker(ticker)
+# df = get_ticker(ticker)
 
-stock.data = stock.from_df(df)
-
-
-
-    # update_plot()
-p_stock = plot_stock(stock)
+# stock.data = stock.from_df(df)
 
 
 
+#     # update_plot()
+# p_stock = plot_stock(stock)
 
-curdoc().theme = 'dark_minimal'
-show(p_stock)
+
+
+
+# curdoc().theme = 'dark_minimal'
+# show(p_stock)
